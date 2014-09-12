@@ -162,7 +162,7 @@ impl<'a, T: Send + Clone> App<'a, T> {
         self.pool.shutdown();
     }
 
-    pub fn run(&mut self) {
+    pub fn run(&self) {
         for event in self.events.ref0().ref1().iter() {
             self.send(event)
         }
