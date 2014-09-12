@@ -162,13 +162,15 @@ impl<'a, T: Send + Clone> App<'a, T> {
         self.pool.shutdown();
     }
 
+    pub fn run(&mut self) {
+        for event in self.events.ref0().ref1().iter() {
+            self.send(event)
+        }
+    }
+
     pub fn send(&self, event: T) {
         for listener in self.events.ref1().iter() {
             listener.send(event.clone())
         }
-    }
-
-    pub fn recv(&self) -> T {
-        self.events.ref0().ref1().recv()
     }
 }
