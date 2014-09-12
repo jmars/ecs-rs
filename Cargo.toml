@@ -1,0 +1,8 @@
+[package]
+
+name = "ecs"
+version = "0.0.1"
+authors = ["Jaye Marshall <marshall.jaye@gmail.com>"]
+
+[dependencies.unsafe-any]
+git = "https://github.com/reem/rust-unsafe-any.git"
