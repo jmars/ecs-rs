@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `App` struct in crate `ecs`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, App">
+
+    <title>ecs::App - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>ecs</a></p><div class='block struct'><h2>Structs</h2><a class='struct current' href='struct.App.html'>App</a><a class='struct ' href='struct.Entity.html'>Entity</a></div><div class='block trait'><h2>Traits</h2><a class='trait ' href='trait.Component.html'>Component</a><a class='trait ' href='trait.System.html'>System</a></div>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><div class='in-band'>Struct <a href='index.html'>ecs</a>::<wbr><a class='struct' href=''>App</a><wbr></div><div class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]
+            </a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-542' href='../src/ecs/Users/J/Code/ecs/src/lib.rs.html#188-192'>[src]</a></div></h1>
+<pre class='rust struct'>pub struct App&lt;'a, T&gt; {
+    // some fields omitted
+}</pre><h2 id='methods'>Methods</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, T: <a class='trait' href='http://doc.rust-lang.org/master/core/kinds/trait.Send.html' title='core::kinds::Send'>Send</a> + <a class='trait' href='http://doc.rust-lang.org/master/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a>&gt; <a class='struct' href='../ecs/struct.App.html' title='ecs::App'>App</a>&lt;'a, T&gt;</code></h3><div class='impl-methods'><h4 id='method.new' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.new' class='fnname'>new</a>(entities: <a class='type' href='../ecs/type.Entities.html' title='ecs::Entities'>Entities</a>) -&gt; <a class='struct' href='../ecs/struct.App.html' title='ecs::App'>App</a>&lt;'a, T&gt;</code></h4>
+<h4 id='method.start' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.start' class='fnname'>start</a>(&amp;mut self, systems: <a class='type' href='../ecs/type.Systems.html' title='ecs::Systems'>Systems</a>&lt;T&gt;)</code></h4>
+<h4 id='method.shutdown' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.shutdown' class='fnname'>shutdown</a>(self)</code></h4>
+<h4 id='method.run' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.run' class='fnname'>run</a>(&amp;self)</code></h4>
+<h4 id='method.send' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.send' class='fnname'>send</a>(&amp;self, event: T)</code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "ecs";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>
